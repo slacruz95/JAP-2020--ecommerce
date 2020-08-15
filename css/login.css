@@ -1,0 +1,185 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+html, body{
+	font-family: 'Poppins', sans-serif;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	background: linear-gradient(to bottom, #773eb9, #a13eb9);
+
+	
+	
+}
+
+
+.containerDiv{
+	padding: 10px 20px 30px ;
+		border: 1px solid #773eb9;
+		border-radius: 18px;
+	width: 350px;
+	background-color: #fff;
+}
+
+
+
+
+.chBox{
+	margin-top: 1rem;
+	margin-bottom:1rem;
+	
+	
+	
+}
+.chLabel{
+	font-size: 0.8rem;
+	color: #4e525e;
+	width: 100%;
+	
+	padding-bottom: 7.2px;
+	
+	
+
+}
+	
+
+.title{
+color: #4e525e;
+
+font-size: 2.5rem;
+margin-bottom: 1.4rem;
+text-align: center;
+
+
+
+	
+	
+
+}
+
+
+.form{
+width: 100%;
+position: relative;
+height: 70px;
+overflow: hidden;
+
+}
+
+ .form input{
+  
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding-top: 20px;
+  color: #4e525e;
+  font-size: 17px;
+  
+  
+ 
+
+}
+
+.form label{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid #773eb9;
+	color: #4e525e;
+	
+
+}
+
+
+.form label::after{
+	content:"";
+	position: absolute;
+	left: 0px;
+	bottom: -1px;
+	height: 100%;
+	width: 100%;
+	border-bottom: 3px solid #a13eb9;
+	transform:translateX(-100%);	
+	transition: transform 0.3s ease;
+
+}
+
+
+.contentEmail{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	transition: all 0.3s ease;
+}
+
+
+
+.form input:focus +  .labelName .contentEmail, 
+.form input:valid + .labelName .contentEmail{
+
+transform: translateY(-150%);
+font-size: 14px;
+color: #7C34CE;
+
+
+
+}
+
+
+.form input:focus + .labelName::after, 
+.form input:valid + .labelName::after{
+	transform: translateX(0%);
+}
+
+
+.imgUser{
+	
+	
+	width: 30px;
+}
+
+.userLoginImg{
+	display: block;
+	justify-content: center;
+	
+	width: 100px;
+}
+
+
+.btn{
+	display: block;
+	width: 50%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #7C34CE,#a13eb9, #7C34CE);
+	background-size: 200%;
+	font-size: 1rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 2rem 0;
+	cursor: pointer;
+  transition: .5s;
+  float: right;
+  
+  
+}
+.btn:hover{
+	background-position: right;
+	
+	color: #fff;
+}
+
+
