@@ -3,8 +3,7 @@
 <html lang="en">
 
 <head>
-  <meta name="google-signin-client_id"
-    content="710657908444-653as7t1uohl68t4s93e9d9aucb9pkgq.apps.googleusercontent.com">
+  <meta name="google-signin-client_id" content="710657908444-653as7t1uohl68t4s93e9d9aucb9pkgq.apps.googleusercontent.com">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -63,11 +62,12 @@
       <button class="btn" onclick="redirect()">Sign in</button>
     </div>
     
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    
 
 
 
   </div>
+  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
   <script>
     function onSignIn(googleUser) {
       // Useful data for your client-side scripts:
@@ -86,11 +86,10 @@
       localStorage.setItem("usuario", profile.getName()); //Almacenamos el nombre obtenido  
       document.getElementById('datos').innerHTML = perfil;
       localStorage.setItem("usuario", profile.getName());
-      location.href = "http://localhost:81/170/storage/next.html"
+      location.href = "https://slacruz95.github.io/JAP-2020--ecommerce/"
+
+
     }
-
-
-
   </script>
   <script src="js/login.js"></script>
   <script src="js/init.js"></script>
