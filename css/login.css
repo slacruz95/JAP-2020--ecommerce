@@ -1,4 +1,4 @@
-
+/*#773eb9 #a13eb9*/
 *{
 	margin: 0;
 	padding: 0;
@@ -19,18 +19,32 @@ html, body{
 
 
 .containerDiv{
-	padding: 10px 20px 30px ;
-		border: 1px solid #773eb9;
-		border-radius: 18px;
+	padding: 10px 20px 0px ;
+	border: 1px solid #773eb9;
+	border-radius: 18px;
 	width: 350px;
-	background-color: #fff;
+	background-color: rgba(255,255,255, 0.7) ;
+	
+}
+
+
+	
+
+
+
+.userLoginImg img{
+	
+	width: 150px;
+	
+}
+.userLoginImg{
+	text-align: center;
 }
 
 
 
-
 .chBox{
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 	margin-bottom:1rem;
 	
 	
@@ -40,7 +54,6 @@ html, body{
 	font-size: 0.8rem;
 	color: #4e525e;
 	width: 100%;
-	
 	padding-bottom: 7.2px;
 	
 	
@@ -54,7 +67,6 @@ color: #4e525e;
 font-size: 2.5rem;
 margin-bottom: 1.4rem;
 text-align: center;
-
 
 
 	
@@ -146,13 +158,6 @@ color: #7C34CE;
 	
 	
 	width: 30px;
-}
-
-.userLoginImg{
-	display: block;
-	justify-content: center;
-	
-	width: 100px;
 }
 
 
