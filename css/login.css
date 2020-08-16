@@ -8,20 +8,25 @@
 html, body{
 	font-family: 'Poppins', sans-serif;
 	height: 100%;
+	width: 100%;
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	background: linear-gradient(to bottom, #773eb9, #a13eb9);
-/*background-image: url("fondo_carrito.jpg");*/
+	background: linear-gradient(to bottom, #8b3131, #c54f4f);
 
-	
 	
 }
 
+body{
+background-image: url(../img/fondo_carrito.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+	
+}
 
 .containerDiv{
 	padding: 10px 20px 0px ;
-	border: 1px solid #773eb9;
+	border: 1px solid #900d0d;
 	border-radius: 18px;
 	width: 350px;
 	background-color: rgba(255,255,255, 0.7) ;
@@ -30,7 +35,6 @@ html, body{
 
 
 	
-
 
 
 .userLoginImg img{
@@ -107,7 +111,7 @@ overflow: hidden;
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
-	border-bottom: 1px solid #773eb9;
+	border-bottom: 1px solid #900d0d;
 	color: #4e525e;
 	
 
@@ -121,7 +125,7 @@ overflow: hidden;
 	bottom: -1px;
 	height: 100%;
 	width: 100%;
-	border-bottom: 3px solid #a13eb9;
+	border-bottom: 3px solid #cf1b1b;
 	transform:translateX(-100%);	
 	transition: transform 0.3s ease;
 
@@ -142,7 +146,7 @@ overflow: hidden;
 
 transform: translateY(-150%);
 font-size: 14px;
-color: #7C34CE;
+color: #900d0d;
 
 
 
@@ -169,7 +173,7 @@ color: #7C34CE;
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #7C34CE,#a13eb9, #7C34CE);
+	background-image: linear-gradient(to right, #900d0d,#cf1b1b, #900d0d);
 	background-size: 200%;
 	font-size: 1rem;
 	color: #fff;
