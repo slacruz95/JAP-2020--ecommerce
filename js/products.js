@@ -64,7 +64,7 @@ function sortProducts(criterio, array) {
                     return -1;
                 }
 
-                if (a.products < b.products) {
+                if (a.cost < b.cost) {
                     return 1;
                 }
 
