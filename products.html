@@ -23,17 +23,65 @@
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
       <a class="py-2 d-none d-md-inline-block" href="cart.html">Mi carrito</a>
+      <div id="info-user" style="display: none">
+        <a id="user" class="py-2 d-none d-md-inline-block mr-5" href="#"></a>
+        <a id="salir" class="py-2 d-md-inline-block font-brand" href="#">Salir</a>
+      </div>
     </div>
   </nav>
 
   <main role="main" class="pb-5">
     <div class="text-center p-4">
       <h2>Productos</h2>
-    </div>
-    <div class="container" id="listadoProduct">
 
     </div>
+    
 
+      <div class="container p-5">
+        <div class="row">
+          <div class="col text-right">
+            <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
+              <button class="btn btn-light" id="asc">Asc <i class="fas fa-sort-amount-up mr-1"></i></button>
+              <button class="btn btn-light" id="desc">Desc <i class="fas fa-sort-amount-down mr-1"></i></button>
+              <button class="btn btn-light" id="rel">Relevancia <i class="fas fa-sort-amount-up mr-1"></i></button>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-end">
+          <div class="col-md-6">
+            <input type="text" id="buscador" placeholder="Buscar" class="form-control">
+
+          </div>
+          <div class="col-md-6 col-sm-12 mb-1 container">
+            <div class="row container p-0 m-0">
+              <div class="col">
+                <p class="font-weight-normal text-right my-2">Precio</p>
+              </div>
+              <div class="col">
+                <input class="form-control" type="number" placeholder="min." id="minRange">
+              </div>
+              <div class="col">
+                <input class="form-control" type="number" placeholder="máx." id="maxRange">
+              </div>
+              <div class="col-3 p-0">
+                <div class="btn-group" role="group">
+                  <button class="btn btn-light btn-block" id="filter">Filtrar</button>
+                  <button class="btn btn-link btn-sm" id="clean">Limpiar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container" id="listadoProduct">
+
+        </div>
+      </div>
 
   </main>
 

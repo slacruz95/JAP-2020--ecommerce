@@ -7,38 +7,38 @@
 
 });*/
 
-    function validateEmail(mail) 
-{
- if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(mail))
-  {
-    return (true)
-  }
+function validateEmail(mail) {
+    if (/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(mail)) {
+        return (true)
+    }
     alert("You have entered an invalid email address!")
     return (false)
 }
 
-  
+
 
 
 function redirect() {
-    let contEmail = document.getElementById("inputEmail").value
-    let contPasswd = document.getElementById("inputPasswd").value
-
+    let contEmail = document.getElementById("inputEmail").value;
+    let contPasswd = document.getElementById("inputPasswd").value;
     if (contEmail.trim() === "" || contPasswd.trim() === "") {
         alert("Invalid data")
 
     } else {
-     const isMail =  validateEmail(contEmail);
-     
-     if(isMail){
-         
-        location.href = "cover.html";
-    
+        const isMail = validateEmail(contEmail);
+
+        if (isMail) {
+            localStorage.setItem("user-logged", JSON.stringify({ user: contEmail }));
+
+
+            location.href = "cover.html";
+
+        }
     }
-}
+
+
 
 }
-
 
 
 
