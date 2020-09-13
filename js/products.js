@@ -11,44 +11,6 @@ var maxCost = undefined;
 var buscar = undefined;
 
 
-/*
-function sortProducts(criterio, array){
-let result= [];
-
-if(criterio === ORDER_ASC_BY_PAG){
-    result = array.sort(
-        function(a, b){
-            if(a.cost < b.cost){return -1;}
-            if(a.cost > b.cost){return 1;}
-            return 0;
-
-        });
-      
-}else if(criterio === ORDER_DESC_BY_COST){
-    resutl  = array.sort(
-        function (a, b){
-            if(a.cost > b.cost){
-               return -1; 
-            }
-
-            if(a.cost < b.cost){
-                return 1;
-            }
-
-            return 0;
-        });
-
-}else if(criterio === ORDER_DESC_BY_REL){
-    result = array.sort(function (a, b){
-        if(a.soldCount > b.soldCount){ return -1;}
-        if(a.soldCount < b.soldCount){ return 1;}
-        return 0;
-    });
-}
-return result;
-}
-
-*/
 function sortProducts(criterio, array) {
     let result = [];
     if (criterio === ORDER_ASC_BY_COST) {
