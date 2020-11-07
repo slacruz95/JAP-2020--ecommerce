@@ -57,7 +57,7 @@
 
     <div class="p-5">
       <div class="row">
-        <div class="col">
+        <div class="col-12 col-md-7 card p-5">
           <table class="table table-striped">
             <thead>
               <tr>
@@ -87,8 +87,8 @@
             <tbody id="total-with-shipping"></tbody>
           </table>
         </div>
-
-        <div class="col">
+        <div class="col-12 col-md-1"></div>
+        <div class="col-12 col-md-4 card p-5 div-input">
           <div>
             <input type="text" class="form-control input-height" name="dir" id="dir" placeholder="Dirección" required /><br />
 
@@ -112,8 +112,10 @@
             <br />
             <br />
 
-            <a class="btn btn-block btn-primary" id="btnPayment" data-toggle="modal" data-target="#modalPayment">Forma de pago</a>
-            <a class="btn btn-block btn-success" id="btn-buy">Comprar</a>
+            <!-- <a class="btn btn-block btn-primary" id="btnPayment" data-toggle="modal" data-target="#modalPayment">Forma de pago</a>-->
+            <div class="div-buy">
+              <a class="btn btn-block btn-success" id="btn-buy" data-toggle="modal" data-target="#modalPayment">Comprar</a>
+            </div>
           </div>
         </div>
       </div>
@@ -154,7 +156,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-block btn-success btn-height" data-dismiss="modal">Listo</button>
+            <button type="button" class="btn btn-block btn-success btn-height" id="btn-listo" data-dismiss="modal">Listo</button>
           </div>
         </div>
       </div>

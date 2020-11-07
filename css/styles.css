@@ -2,7 +2,7 @@
 .card-body,
 .container,
 .site-header {
-  font-family: "Raleway", serif !important;
+  font-family: 'Raleway', serif !important;
 }
 
 .jumbotron .display-4 {
@@ -14,7 +14,7 @@
   padding: 5em inherit;
   margin-bottom: 0;
   background-color: #53c0fb;
-  background: url("../img/cover_back.png");
+  background: url('../img/cover_back.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,9 +161,20 @@ a.custom-card:hover {
 }
 
 #btn-buy {
-  height: 38px;
+  height: 45px;
+  width: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.div-buy {
+  display: flex;
+  justify-content: center;
+}
+
+.div-img {
+  display: flex;
+  justify-content: center;
 }

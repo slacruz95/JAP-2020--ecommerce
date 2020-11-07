@@ -40,8 +40,9 @@
       <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
       <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
       <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
-            <div class="dropdown" id="info-user" style="display: none">
-        <button class="btn btn-secondary dropdown-toggle btn-danger" type="button" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+      <div class="dropdown" id="info-user" style="display: none">
+        <button class="btn btn-secondary dropdown-toggle btn-danger" type="button" id="user" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"></button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="my-profile.html">Perfil</a>
           <a class="dropdown-item" href="cart.html">Mi carrito</a>
@@ -51,19 +52,28 @@
     </div>
     </div>
   </nav>
-  <div class="container p-5">
-    <div class="alert alert-danger" role="alert" style="position: relative; width:auto; top: 0;">
-      <h4 class="alert-heading">¡A trabajar! :)</h4>
-      <p>Esta sección corresponde a: Entrega 7 (Fecha de entrega: 8/11/202020) -> Punto 1 y 2.</p>
-      <hr>
-      <p class="mb-0">Para saber qué debes hacer, fijate en la actividad en CREA correspondiente a esta entrega.</p>
+  <div class="row p-5">
+    <div class="col"></div>
+    <div class="container p-3 card col-2">
+      <div class="div-img p-5">
+        <img src="img/userLogin2.png" id="img-profile"  width="200px"><br>
+      </div>
+    
+  
+      <input type="text"  class="form-control input-height" placeholder="URL Imagen"  id="url-profile"><br>
+      
+      <input type="text" class="form-control input-height" placeholder="Nombre" id="name-profile"><br>
+      <input type="text" class="form-control input-height" placeholder="Apellido" id="ap-profile"><br>
+      <input type="number" class="form-control input-height" placeholder="Edad" id="age-profile"><br>
+      <input type="number" class="form-control input-height" placeholder="Teléfono" id="tel-profile"><br>
+      <input type="email" class="form-control input-height" placeholder="Mail" id="mail-profile"><br>
+      <button class="btn btn-block btn-danger" id="btn-profile" >Guardar</button><br>
+
     </div>
+    <div class="col"></div>
   </div>
   <footer class="text-muted bg-light">
-    <div class="container">
-      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
-      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
-    </div>
+
   </footer>
   <div class="alert fade alert-success" role="alert" id="alertResult">
     <span id="resultSpan"></span>
