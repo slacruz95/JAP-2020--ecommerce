@@ -60,10 +60,10 @@ btnProfile.addEventListener('click', function (e) {
         img: imgInput.value,
       })
     );
+    setTimeout(function () {
+      window.location = 'my-profile.html';
+    }, 500);
   }
-  setTimeout(function () {
-    window.location = 'my-profile.html';
-  }, 500);
 });
 
 let userLog = localStorage.getItem('user-logged');
